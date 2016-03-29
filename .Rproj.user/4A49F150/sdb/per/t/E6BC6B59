@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"2. Cross-tabulation\"\noutput: md_document\n---\n# Creating a cross-tablulation\n\nThe next step is to add additional variables to the tabulations that we went through in the first tutorial.  This tutorial should be much shorter now that the basics are out of the way.  We'll continue using the poverty_new variable that we created.  The code to load the libraries and data, then recode the variable is below.\n\n```{r, setup}\nlibrary(car)\nlibrary(dplyr)\n\n# Change the file path to the proper location\n\n# setwd(PATH_TO_TUTORIAL_FOLDER) #uncomment this line to change directory.\n\n# reads in the csv file and stores it. stringsAsFactors=FALSE keeps R from tansforming variables you don't want transformed.\n\ndata <- read.csv(\"Data and Documentation/ss14pco.csv\", stringsAsFactors=FALSE) \n\ndata <- data%>% # passes the data object we created above to the next function\n          mutate(poverty_new=recode(POVPIP, \"000:124=1; 125:183=2; 183:501=3\")) # adds the poverty_new variable to the end of the dataset, it doesn't over write POVPIP.\n\n```\n\nLet's say that we want to know about children and poverty using the same poverty levels we used before.  We'd need to create another variable, based on the `AGEP` variable (see the data dictionary page 32) that indicated if a person was under 18 or not. To do this, we'll use the base R command `ifelse` to create a statement that will make those under 18 coded to 1 and those 18 and over coded 2.\n\n```{r, recode}\n\ndata <- data%>%\n  mutate(child=ifelse(AGEP<18, 1, 2))\n```",
+    "created" : 1459287682735.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "275544069",
+    "id" : "E6BC6B59",
+    "lastKnownWriteTime" : 1459292454,
+    "last_content_update" : 1459292454813,
+    "path" : "~/Desktop/Demography Office R/AmericanCommunitySurvey_PUMS_Tutorial/cross_tabulation.rmd",
+    "project_path" : "cross_tabulation.rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
