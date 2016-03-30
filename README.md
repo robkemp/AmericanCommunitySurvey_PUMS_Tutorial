@@ -11,9 +11,7 @@ Hello.  This tutorial is intended to help you get started using the American Com
 
 ## R Basics
 
-If you are 100% new to R, I recommend looking at a few resources to get you started.  I've provided a list below:
-
-PUT THE LIST FROM THE OLD DOCS HERE
+If you are 100% new to R, I recommend looking at a few resources to get you started.  For a full tutorial check out this [one](http://tryr.codeschool.com/)
 
 ## Setting Up R and RStudio (Skip this if you already have them)
 
