@@ -70,13 +70,13 @@ children_poverty
 
 ## Label Recoded Variables
 
-In our previous example we needed to remember or refer to which category recieved which code.  In this demonstration, I'll add labels so we are able to more quickly derive insights.
+In our previous example we needed to remember or refer to which category received which code.  In this demonstration, I'll add labels so we are able to more quickly derive insights.
 
 R has a specific type of variable that is useful for many operations, but I use it the most for labeling recoded variables.  This variable type is called a factor.  It contains two pieces of information, a level (numeric but doesn't need to indicate ordering even though it can) and a label for that level.  There are ordered and unordered factors, but I'll be using an ordered factor for both since each variable has an intrinsic ordering.
 
 Quick side note, you can ignore this if you'd like.  R also has a text variable called a "string" that I could just use in the recode calls directly.  It would make the actual values for each recode into their labels rather than the numeric values I used.  I don't necessarily think that this approach is wrong, but it is certainly less flexible.  Particularly if you'd like to graph the data.  I can control the ordering of the labels by assigning the level in the order I'd like them displayed using factors, I can't do this on strings, which use an alphabetical sorting method.  I can also always pull the text out of the factor labels if needed.
 
-Techincally, this next bit of code will take the variables we already made and use them to create new variables as factors with labels.  I'll use the function `ordered` to create the factor since I'm implying an order to the levels, but if your data are not ordered and you don't mind an alphabethical sort, `factor` will work as well. A couple more technical notes: `:` in R means through, so `1:3` means use values 1 through 3 and the `c()` command concatenates whatever you put into the parenthese into a vector of values.  R uses that a TON within functions to help keep things orderly.
+Technically, this next bit of code will take the variables we already made and use them to create new variables as factors with labels.  I'll use the function `ordered` to create the factor since I'm implying an order to the levels, but if your data are not ordered and you don't mind an alphabetical sort, `factor` will work as well. A couple more technical notes: `:` in R means through, so `1:3` means use values 1 through 3 and the `c()` command concatenates whatever you put into the parentheses into a vector of values.  R uses that a TON within functions to help keep things orderly.
 
 ```{r, labels}
 

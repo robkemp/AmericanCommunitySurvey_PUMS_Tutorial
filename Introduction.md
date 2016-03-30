@@ -21,13 +21,13 @@ I **strongly** recommend that anyone using R use RStudio to interact with R.  Wh
 
 To download R visit [CRAN](https://cran.r-project.org/) and click on the download link for your operating system. Run through your systems dialog for installing R.  As of this writing, the most recent version is 3.2.4, which is what I'm using. 
 
-To download RStudio visit [RStudio Download Site](https://www.rstudio.com/products/rstudio/download/) and click the download link that corresponds to your system.  Run the installation dialogs to install it.  RStudio will automatically find the installation of R you just did.
+To download RStudio visit [RStudio Download Site](https://www.rstudio.com/products/rstudio/download/) and click the download link that corresponds to your system.  Run the installation dialog to install it.  RStudio will automatically find the installation of R you just did.
 
 If you're using Windows, you'll need to install RTools, which is a piece of software that you'll need to build R packages that you download from online. I won't be using it, but it's a good idea to install whenever you install R.  Click on the link for [RTools Installers](https://cran.r-project.org/bin/windows/Rtools/) and you can just download the highest version number.
 
 ## Installing Required R 'Packages'
 
-In R there are a set of functions and capabilities that are in the basic installation, called base-R.  To add fuctionality, R allows for additional function to be added by installing R 'packages' that provide different functionality.  This tutorial uses a few R packages that are not in base-R.  I'll describe them in more detail later, but for now, just open RStudio and copy-paste the following code into the window labeled 'Console'.  
+In R there are a set of functions and capabilities that are in the basic installation, called base-R.  To add functionality, R allows for additional function to be added by installing R 'packages' that provide different functionality.  This tutorial uses a few R packages that are not in base-R.  I'll describe them in more detail later, but for now, just open RStudio and copy-paste the following code into the window labeled 'Console'.  
 
 ```r
 install.packages(c("dplyr", "car", "survey"))
