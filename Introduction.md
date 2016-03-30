@@ -4,8 +4,8 @@ Hello.  This tutorial is intended to help you get started using the American Com
 
 ## Sections
 
-1. Basics of PUMS - Recode and Single Variable
-2. Cross-tabulation, Labels, and Exporting
+1. [Basics of PUMS - Recode and Single Variable](Tutorials/basic_pums.md)
+2. [Cross-tabulation, Labels, and Exporting](Tutorials/cross_tabulation.md)
 
 
 
