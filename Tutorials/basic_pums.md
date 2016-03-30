@@ -132,9 +132,7 @@ The first this we need to do is load the required libraries:
     library(car)
     library(dplyr)
 
-After this, we need to load our data in. I decided NOT to make this an
-RStudio project to make sure people that don't want to use RStudio can
-use it easily. The most important part is telling R where the folder for
+After this, we need to load our data in. While this repo can be used as an RStudio project, you don't have to. If you don't, then the most important part is telling R where the folder for
 the tutorial is. If you're using Windows, make sure you change the `\`
 to `/` so that R can read it. The first command does that, the second
 loads the data into an object called `data`. NOTE: Larger states or the
