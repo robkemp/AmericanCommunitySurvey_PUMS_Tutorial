@@ -1,12 +1,13 @@
 # American Community Survey Public Use Microdata Series Tutorial in R
 
-Hello.  This tutorial is intended to help you get started using the American Community Survey PUMS files in R.  The Census does provide some tools for using these files, but they generally aren't very flexible or reproducible.  This guide should help almost anyone use R to get useful cross tabulations and estimates from the PUMS Files.  It will provide resources for learning R, getting R and RStudio set-up to do this, and provide code examples and explanations for making estimates.  In future editions this tutorial will add a module on how to generate estimates with margins of error and uncertainty.  
+Hello.  This tutorial is intended to help you get started using the American Community Survey PUMS files in R.  The Census does provide some tools for using these files, but they generally aren't very flexible or reproducible.  This guide should help almost anyone use R to get useful cross tabulations and estimates from the PUMS Files.  It will provide resources for learning R, getting R and RStudio set-up to do this, and provide code examples and explanations for making estimates. If you are interested in margins of error, check out the `survey` package for R.  It's a whole tutorial unto itself so I won't be covering that here.
 
 ## Sections
 
 1. Basics of PUMS - Recode and Single Variable
-2. Cross-tabulation
-3. Margin of Error
+2. Cross-tabulation, Labels, and Exporting
+
+
 
 ## R Basics
 
